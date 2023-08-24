@@ -1,1 +1,24 @@
 GET http://localhost:3042
+
+### POST
+GET http://localhost:3042/routes
+
+###
+GET http://localhost:3042/routes/1
+
+###
+POST http://localhost:3042/routes
+Content-Type: application/json
+
+{
+    "name": "route test 1",
+    "source_id": "1",
+    "destination_id": "2"
+}
+
+### Coisas do mapa
+
+### Pegar o place id
+GET http://localhost:3042/places?text=R. Cel. Antônio Botelho, Maranguape, 254
+
+
